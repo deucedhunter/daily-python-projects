@@ -1,4 +1,6 @@
-"""Project Description
+"""
+https://dailypythonprojects.substack.com/p/check-if-number-is-positive-or-negative
+Project Description
 
 Create a simple program that checks if a given number is positive, negative, or zero.
 Expected Output
