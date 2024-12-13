@@ -30,7 +30,7 @@ def check_username_validity(username):
             non_alphanumeric += 1
         if idx == len(username) - 1 and non_alphanumeric==0:
             validate["isAlphanumeric"] = True
-        elif  idx == len(username) - 1 and non_alphanumeric>0:
+        elif idx == len(username) - 1 and non_alphanumeric>0:
             validate["isAlphanumeric"] = False
             error_list.append("Username must be alphanumeric.")
     if not username[0].isalpha():
@@ -38,8 +38,12 @@ def check_username_validity(username):
         error_list.append("Username must start with a letter.")
     else:
         validate["isStartsWithLetter"] = True
-    for error in error_list:
-        print(error)
+    if len(error_list)>0:
+        for error in error_list:
+            print("Invalid username.")
+            print(error)
+    else:
+        print("Valid username.")
 
 
-check_username_validity("aas#$%dsadas")
+check_username_validity("aas32131dsadas")
