@@ -1,0 +1,4 @@
+1990-08-09,food,some food,13.0
+
+2024-12-12,food,cheese,15.0
+
